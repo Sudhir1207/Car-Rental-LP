@@ -47,8 +47,12 @@ const CarList = () => {
                   data-aos-delay={aosDelay}
                   className="space-y-3 border-2 border-gray-300 hover:border-primary p-3 rounded-xl relative group"
                 >
-                  <div className="w-full h-[120px] object-contain sm:translate-x-7 group-hover:sm:translate-x-16 duration-700">
-                    <img className="" src={image} alt="" />
+                  <div className="w-full h-[120px]">
+                    <img
+                      className="w-full h-[120px] object-contain sm:translate-x-7 group-hover:sm:translate-x-16 duration-700"
+                      src={image}
+                      alt=""
+                    />
                   </div>
                   <div className="space-y-2">
                     <h1 className="text-primary font-semibold">{name}</h1>

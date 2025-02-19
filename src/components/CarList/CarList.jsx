@@ -43,6 +43,7 @@ const CarList = () => {
             {CarListData.map(({ name, price, image, aosDelay }) => {
               return (
                 <div
+                  key={name}
                   data-aos="fade-up"
                   data-aos-delay={aosDelay}
                   className="space-y-3 border-2 border-gray-300 hover:border-primary p-3 rounded-xl relative group"

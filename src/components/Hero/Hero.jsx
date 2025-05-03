@@ -4,7 +4,7 @@ import yellowCarPng from "../../assets/banner-car.png";
 
 const Hero = ({ theme }) => {
   return (
-    <div className="dark:bg-black dark:text-white duration-300 relative -z-20">
+    <div className="dark:bg-black dark:text-white duration-300 relative">
       <div className="container min-h-[620px] flex">
         <div className="grid place-items-center grid-cols-1 sm:grid-cols-2">
           <div
@@ -14,7 +14,7 @@ const Hero = ({ theme }) => {
           >
             <img
               src={theme === "dark" ? carPng : yellowCarPng}
-              alt=""
+              alt="car"
               className="relative -z-10 max-h-[600px] sm:scale-125 drop-shadow-[2px_20px_6px_rgba(0,0,0,0.50)]"
             />
           </div>

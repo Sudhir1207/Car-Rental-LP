@@ -50,7 +50,7 @@ const CarList = () => {
                 >
                   <div className="w-full h-[120px]">
                     <img
-                      className="w-full h-[120px] object-contain sm:translate-x-7 group-hover:sm:translate-x-16 duration-700"
+                      className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700"
                       src={image}
                       alt=""
                     />
@@ -59,6 +59,7 @@ const CarList = () => {
                     <h1 className="text-primary font-semibold">{name}</h1>
                     <div className="flex justify-between items-center text-xl font-semibold">
                       <p>₹{price}/day</p>
+                      <a href="#">Details</a>
                     </div>
                   </div>
                   <p className="text-xl font-semibold absolute top-0 left-3">
@@ -68,12 +69,12 @@ const CarList = () => {
               );
             })}
           </div>
-          {/* end of listing */}
-          <div className="grid place-content-center mt-8">
-            <button data-aos="fade-up" className="button-outline">
-              Get Started
-            </button>
-          </div>
+        </div>
+        {/* end of listing */}
+        <div className="grid place-content-center mt-8">
+          <button data-aos="fade-up" className="button-outline">
+            Get Started
+          </button>
         </div>
       </div>
     </div>
